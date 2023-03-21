@@ -34,6 +34,10 @@
 //! }
 //! ```
 //! A more detailed example can be found in [opentelemetry-rust](https://github.com/open-telemetry/opentelemetry-rust/tree/main/examples/aws-xray) repo
+
+#[cfg(feature = "detector")]
+pub mod detector;
+
 #[cfg(feature = "trace")]
 pub mod trace {
     use once_cell::sync::Lazy;
